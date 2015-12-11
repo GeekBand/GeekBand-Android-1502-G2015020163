@@ -3,10 +3,12 @@ package com.geekband.snap.moran.model;
 
 public class ImageItem {
     private int imageId;
-    private String comment;
+    private String imageLink;
+
     public ImageItem(int imageId,String comment){
         this.imageId = imageId;
-        this.comment = comment;
+        this.imageLink = imageLink;
+
     }
     public int getImageId() {
         return imageId;
@@ -16,10 +18,10 @@ public class ImageItem {
         this.imageId = imageId;
     }
     public String getComment() {
-        return comment;
+        return imageLink;
     }
 
     public void setComment(String comment) {
-        this.comment = comment;
+        this.imageLink = imageLink;
     }
 }

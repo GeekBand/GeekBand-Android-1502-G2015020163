@@ -32,7 +32,12 @@ public class SquareActivity extends AppCompatActivity {
 
         final TokenEngine.TokenInfo tokenInfo = TokenEngine.getTokenInfo(SquareActivity.this);
         mAppContext = (ApplicationContext) getApplication();
-       final String path = mAppContext.getUrl(mPath);
+        final String path = mAppContext.getUrl(mPath);
+
+//        NodeAdapter adapter = new NodeAdapter(SquareActivity.this,mNodes);
+//
+//        mListView.setAdapter(adapter);
+
 
         if(NetworkStatus.isNetworkConnected(SquareActivity.this)){
             new Thread(){
@@ -46,62 +51,6 @@ public class SquareActivity extends AppCompatActivity {
             Toast.makeText(SquareActivity.this,R.string.unavailable_network_connection,Toast.LENGTH_SHORT).show();
         }
 
-//        NodeAdapter adapter = new NodeAdapter(SquareActivity.this,mNodes);
-//        mListView.setAdapter(adapter);
-
-
     }
-//
-//    private void initData() {
-//        mNodes = new ArrayList<>();
-//        Node node = new Node();
-//        node.setAddress("地点一");
-//        List<ImageItem> imageItems = new ArrayList<>();
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "真好吃"));
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "好吃你就多吃点"));
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "不能浪费！"));
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "真好吃"));
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "好吃你就多吃点"));
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "不能浪费！"));
-//        node.setImages(imageItems);
-//        mNodes.add(node);
-//
-//        node = new Node();
-//        node.setAddress("地点二");
-//        imageItems = new ArrayList<>();
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "真好吃"));
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "好吃你就多吃点"));
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "不能浪费！"));
-//
-//        node.setImages(imageItems);
-//        mNodes.add(node);
-//
-//        node = new Node();
-//        node.setAddress("地点三");
-//        imageItems = new ArrayList<>();
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "真好吃"));
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "好吃你就多吃点"));
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "不能浪费！"));
-//        node.setImages(imageItems);
-//        mNodes.add(node);
-//
-//        node = new Node();
-//        node.setAddress("地点四");
-//        imageItems = new ArrayList<>();
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "真好吃"));
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "好吃你就多吃点"));
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "不能浪费！"));
-//        node.setImages(imageItems);
-//        mNodes.add(node);
-//
-//        node = new Node();
-//        node.setAddress("地点五");
-//        imageItems = new ArrayList<>();
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "真好吃"));
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "好吃你就多吃点"));
-//        imageItems.add(new ImageItem(R.drawable.sign_logo, "不能浪费！"));
-//        node.setImages(imageItems);
-//        mNodes.add(node);
-//    }
 
 }
